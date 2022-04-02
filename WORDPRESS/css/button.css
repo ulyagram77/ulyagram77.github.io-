@@ -1,0 +1,133 @@
+
+
+.promo_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 73px;
+    width: 313px;
+    height: 72px;
+    
+    
+    transform: translate(0, 0);
+    padding: 15px 30px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+}
+.promo_btn:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+}
+.promo_btn:hover:before{
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+}
+
+.promo_btn:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    
+}
+
+.promo_btn:hover:after{
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0); 
+}
+
+.bonus_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 313px;
+    height: 72px;
+    
+    
+    transform: translate(0, 0);
+    padding: 15px 30px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+}
+
+.bonus_btn:before{
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f9bf3b;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+}
+.bonus_btn:hover:before{
+    
+    transition: transform 0.5s;
+    transform-origin: top left;
+    
+    transform: scale(1);
+}
+
+.bonus_btn:after{
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    z-index: -1;
+    
+    transition: transform 0.5s;
+    transform-origin: top left;
+    
+}
+
+.bonus_btn:hover:after{
+    
+    transition: transform 0.5s;
+    
+    transform-origin: bottom right;
+    transform: scale(0); 
+}
